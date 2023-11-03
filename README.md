@@ -1,4 +1,4 @@
-# Clínica Sitcon
+# Projeto Clínica Sitcon
 
 Este projeto é uma solução de gerenciamento para uma clínica, permitindo a solicitação de exames laboratoriais e consultas de retorno.
 Projeto para teste oferecido pela empresa Sitcon, Ipatinga-MG.
@@ -9,11 +9,10 @@ Projeto para teste oferecido pela empresa Sitcon, Ipatinga-MG.
 - Solicitação clínica
 - Listagem de solicitações
 
-Feature adicional:
+## Feature adicional:
 
 - Filtros por data, tipo de procedimento e profissional.
-- Opção para adicionar observações por parte dos profissionais a cada entrada no histórico.
-- Visualização do histórico de consultas e exames laboratoriais do paciente.
+- Opção para adicionar observações por parte dos profissionais a cada exame ou consulta marcada.
 
 ## Tecnologias Utilizadas
 
