@@ -1,7 +1,6 @@
 exports.shorthands = undefined;
 
 exports.up = pgm => {
-  // Tabela pacientes
   pgm.createTable('pacientes', {
     id: { type: 'serial', primaryKey: true },
     nome: { type: 'text', notNull: true },
@@ -10,21 +9,18 @@ exports.up = pgm => {
     status: { type: 'text', notNull: true }
   });
 
-  // Tabela profissionais
   pgm.createTable('profissional', {
     id: { type: 'serial', primaryKey: true },
     nome: { type: 'text', notNull: true },
     status: { type: 'text', notNull: true }
   });
 
-  // Tabela tipoSolicitacao
   pgm.createTable('tipoSolicitacao', {
     id: { type: 'serial', primaryKey: true },
     descricao: { type: 'text', notNull: true },
     status: { type: 'text', notNull: true }
   });
 
-  // Tabela procedimentos
   pgm.createTable('procedimentos', {
     id: { type: 'serial', primaryKey: true },
     descricao: { type: 'text', notNull: true },
@@ -36,7 +32,6 @@ exports.up = pgm => {
     status: { type: 'text', notNull: true }
   });
 
-  // Tabela profissionalAtende
   pgm.createTable('profissionalAtende', {
     id: { type: 'serial', primaryKey: true },
     procedimento_id: {
@@ -46,7 +41,7 @@ exports.up = pgm => {
     },
     profissional_id: {
       type: 'integer',
-      references: '"profissionais"',
+      references: '"profissional"',
       onDelete: 'cascade'
     },
     status: { type: 'text', notNull: true },
@@ -58,6 +53,6 @@ exports.down = pgm => {
   pgm.dropTable('profissionalAtende');
   pgm.dropTable('procedimentos');
   pgm.dropTable('tipoSolicitacao');
-  pgm.dropTable('profissionais');
+  pgm.dropTable('profissional');
   pgm.dropTable('pacientes');
 };

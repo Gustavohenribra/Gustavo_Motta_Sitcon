@@ -1,4 +1,4 @@
-require('dotenv').config({ path: './database/.env' });
+require('dotenv').config();
 const path = require('path');
 const migrate = require('node-pg-migrate').default;
 
@@ -18,7 +18,7 @@ const runMigrations = async () => {
       singleTransaction: true,
       count: Infinity,
       databaseUrl: dbConfig,
-      dir: path.join(__dirname, 'database/migrations'),
+      dir: path.join(__dirname, './migrations'),
       log: console.log,
     });
 

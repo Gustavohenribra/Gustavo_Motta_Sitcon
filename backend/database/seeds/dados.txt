@@ -1,0 +1,37 @@
+insert into pacientes (id, nome, "dataNasc", "CPF", status) values (1, 'Augusto Fernandes', '2000-08-10', '50560437960', 'ativo');
+insert into pacientes (id, nome, "dataNasc", "CPF", status) values (2, 'Maria Silva Oliveira', '1999-03-21', '64826270569', 'ativo');
+insert into pacientes (id, nome, "dataNasc", "CPF", status) values (3, 'Alfonse Smikchuz', '2002-10-02', '67382530361', 'ativo');
+insert into pacientes (id, nome, "dataNasc", "CPF", status) values (4, 'Nagela Perreira', '1997-05-16', '14634040778', 'ativo');
+insert into pacientes (id, nome, "dataNasc", "CPF", status) values (6, 'João Paulo Ferreira', '1995-06-26', '96769735201', 'inativo');
+insert into pacientes (id, nome, "dataNasc", "CPF", status) values (5, 'Gustavo Hernanes', '2001-07-10', '36891552769', 'ativo');
+insert into pacientes (id, nome, "dataNasc", "CPF", status) values (9, 'Zira Silva', '2003-02-14', '04417137313', 'ativo');
+insert into pacientes (id, nome, "dataNasc", "CPF", status) values (8, 'Helena Marques', '2000-01-11', '82165390405', 'ativo');
+insert into pacientes (id, nome, "dataNasc", "CPF", status) values (7, 'Julio Costa Martins', '1980-11-23', '35038113059', 'ativo');
+insert into pacientes (id, nome, "dataNasc", "CPF", status) values (10, 'João Bicalho', '1993-03-12', '97831061701', 'inativo');
+insert into pacientes (id, nome, "dataNasc", "CPF", status) values (12, 'Carolina Rosa Silva', '2001-12-24', '34885870011', 'ativo');
+insert into pacientes (id, nome, "dataNasc", "CPF", status) values (11, 'Paulina Araujo', '2002-08-10', '17972334920', 'ativo');
+
+insert into profissional (id, nome, status) values (1, 'Orlando Nobrega', 'ativo');
+insert into profissional (id, nome, status) values (2, 'Rafaela Tenorio', 'ativo');
+insert into profissional (id, nome, status) values (3, 'João Paulo Nobrega', 'ativo');
+
+insert into "tipoSolicitacao" (id, descricao, status) values (1, 'Consulta', 'ativo');
+insert into "tipoSolicitacao" (id, descricao, status) values (2, 'Exames Laboratoriais', 'ativo');
+
+insert into procedimentos (id, descricao, tipo_id, status) values (1, 'Consulta Pediátrica', 1, 'ativo');
+insert into procedimentos (id, descricao, tipo_id, status) values (2, 'Consulta Clínico Geral', 1, 'ativo');
+insert into procedimentos (id, descricao, tipo_id, status) values (3, 'Hemograma', 2, 'ativo');
+insert into procedimentos (id, descricao, tipo_id, status) values (4, 'Glicemia', 2, 'ativo');
+insert into procedimentos (id, descricao, tipo_id, status) values (5, 'Colesterol', 2, 'ativo');
+insert into procedimentos (id, descricao, tipo_id, status) values (6, 'Triglicerídeos', 2, 'ativo');
+
+insert into "profissionalAtende" (id, procedimento_id, profissional_id, status) values (1, 1, 2, 'ativo');
+insert into "profissionalAtende" (id, procedimento_id, profissional_id, status) values (2, 2, 2, 'ativo');
+insert into "profissionalAtende" (id, procedimento_id, profissional_id, status) values (3, 2, 3, 'ativo');
+insert into "profissionalAtende" (id, procedimento_id, profissional_id, status) values (4, 1, 3, 'inativo');
+insert into "profissionalAtende" (id, procedimento_id, profissional_id, status) values (5, 3, 1, 'ativo');
+insert into "profissionalAtende" (id, procedimento_id, profissional_id, status) values (6, 4, 1, 'ativo');
+insert into "profissionalAtende" (id, procedimento_id, profissional_id, status) values (7, 5, 1, 'ativo');
+insert into "profissionalAtende" (id, procedimento_id, profissional_id, status) values (8, 6, 1, 'ativo');
+
+
