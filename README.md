@@ -40,7 +40,7 @@ Para configurar este projeto em seu ambiente local, siga os passos abaixo:
 
 ## Como Usar
 
-Para iniciar o servidor do projeto, execute `npm start`. O servidor estará acessível na porta padrão `3000`.
+Para iniciar o servidor do projeto, execute `npm start` dentro da pasta frontend. O servidor estará acessível na porta padrão `3000`.
 
 ## Estrutura do Banco de Dados
 
