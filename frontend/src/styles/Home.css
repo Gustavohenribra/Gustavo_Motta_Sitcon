@@ -49,6 +49,9 @@
   }
   html {
     height: 100%;
+    position: relative;
+    min-height: 200vh;
+    padding-bottom: 50px;
   }
   body {
     margin: 0;
@@ -1706,7 +1709,7 @@
   }
   
   .main-subheading {
-    color: rgba(255, 255, 255, .81);
+    color: hsla(0, 0%, 100%, 0.812);
     margin-top: 18px;
     margin-bottom: 44px;
     font-family: Vollkorn, serif;

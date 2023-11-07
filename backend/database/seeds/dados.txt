@@ -10,6 +10,15 @@ insert into pacientes (id, nome, "dataNasc", "CPF", status) values (7, 'Julio Co
 insert into pacientes (id, nome, "dataNasc", "CPF", status) values (10, 'João Bicalho', '1993-03-12', '97831061701', 'inativo');
 insert into pacientes (id, nome, "dataNasc", "CPF", status) values (12, 'Carolina Rosa Silva', '2001-12-24', '34885870011', 'ativo');
 insert into pacientes (id, nome, "dataNasc", "CPF", status) values (11, 'Paulina Araujo', '2002-08-10', '17972334920', 'ativo');
+insert into pacientes (id, nome, "dataNasc", "CPF", status) values (13, 'Juliana Moraes', '1995-03-15', '12345678901', 'ativo');
+insert into pacientes (id, nome, "dataNasc", "CPF", status) values (14, 'Marcos de Andrade', '1980-07-22', '23456789012', 'ativo');
+insert into pacientes (id, nome, "dataNasc", "CPF", status) values (15, 'Ana Beatriz Almeida', '2001-01-30', '34567890123', 'ativo');
+insert into pacientes (id, nome, "dataNasc", "CPF", status) values (16, 'Ricardo Queiroz', '1974-12-05', '45678901234', 'ativo');
+insert into pacientes (id, nome, "dataNasc", "CPF", status) values (17, 'Tatiana Oliveira', '1992-05-17', '56789012345', 'ativo');
+insert into pacientes (id, nome, "dataNasc", "CPF", status) values (18, 'Bruno Henrique Silva', '1985-10-25', '67890123456', 'ativo');
+insert into pacientes (id, nome, "dataNasc", "CPF", status) values (19, 'Carolina Gomes', '1979-02-13', '78901234567', 'ativo');
+insert into pacientes (id, nome, "dataNasc", "CPF", status) values (20, 'Diego Santos', '1999-11-08', '89012345678', 'ativo');
+
 
 insert into profissional (id, nome, status) values (1, 'Orlando Nobrega', 'ativo');
 insert into profissional (id, nome, status) values (2, 'Rafaela Tenorio', 'ativo');

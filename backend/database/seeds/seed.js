@@ -16,27 +16,29 @@ const seedDataFromFile = async (filePath) => {
 
   try {
     const data = fs.readFileSync(filePath, 'utf-8');
-    const queries = data.split(';');
-
-    await client.query('BEGIN');
+    const queries = data.split(';').map(query => query.trim()).filter(query => query);
 
     for (let query of queries) {
-        query = query.trim();
-        if (query) {
-          if (!query.endsWith(';')) {
-            query += ';';
-          }
-          console.log(query);
-          await client.query(query);
+      try {
+        await client.query('BEGIN');
+        if (!query.endsWith(';')) {
+          query += ';';
+        }
+        await client.query(query);
+        await client.query('COMMIT');
+        console.log(`Inserção realizada: ${query}`);
+      } catch (error) {
+        await client.query('ROLLBACK');
+        if (error.code === '23505') {
+          console.error(`Chave duplicada encontrada, pulando inserção: ${error.detail}`);
+        } else {
+          throw error;
         }
       }
-
-    await client.query('COMMIT');
-    console.log('Seed data inserted successfully.');
+    }
+    console.log('Todos os dados válidos foram inseridos com sucesso.');
   } catch (e) {
-    await client.query('ROLLBACK');
-    console.error('Error inserting seed data:', e.message);
-    throw e;
+    console.error('Erro ao inserir dados:', e.message);
   } finally {
     client.release();
   }
