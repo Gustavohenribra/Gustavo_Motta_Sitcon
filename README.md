@@ -52,6 +52,9 @@ A estrutura do banco de dados é composta pelas seguintes tabelas:
 - `tipoSolicitacao`: Define os tipos de solicitações que podem ser feitas, como consultas ou exames.
 - `procedimentos`: Relaciona os procedimentos disponíveis, com descrição e tipo associado.
 - `profissionalAtende`: Registra quais profissionais atendem a quais procedimentos.
+- `solicitacaoProcedimentos`: Registra os procedimentos e os agrupa por ID, em caso de haver mais de um procedimento por exame, facilitando a organizaçao dos dados.
+- `solicitacoesClinicas`: Registra as solicitaçoes clinicas integrando com o solicitacaoProcedimentos.
+- `pgmigrations`: Controla as migraçoes das tabelas.
 
 ## Autor
 
