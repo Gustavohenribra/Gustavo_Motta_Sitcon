@@ -12,7 +12,7 @@ Projeto para teste oferecido pela empresa Sitcon, Ipatinga-MG.
 
 ## Feature adicional:
 
-- Filtros por data, tipo de procedimento e profissional.
+- Filtros por data, tipo de procedimento, profissional, Tipo de Solicitação e Paciente.
 - Opção para adicionar observações por parte dos profissionais a cada exame ou consulta marcada.
 
 ## Tecnologias Utilizadas

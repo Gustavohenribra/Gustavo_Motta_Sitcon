@@ -1,4 +1,3 @@
-// Inicio.js
 import React from 'react';
 import MainSection from './MainSection';
 import ContactInfo from './ContactInfo';

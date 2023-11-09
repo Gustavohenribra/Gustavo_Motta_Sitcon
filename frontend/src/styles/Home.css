@@ -47,12 +47,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  html {
-    height: 100%;
-    position: relative;
-    min-height: 200vh;
-    padding-bottom: 50px;
-  }
+
   body {
     margin: 0;
     min-height: 100%;
@@ -1369,12 +1364,24 @@
   .w--nav-dropdown-list-open {
     position: static;
   }
-  @media screen and (max-width: 991px) {
-    .w-nav[data-collapse="medium"] .w-nav-menu {
+
+  @media (max-width: 991px) {
+    .nav-menu {
       display: none;
     }
-    .w-nav[data-collapse="medium"] .w-nav-button {
+  
+    .w--nav-menu-open {
       display: block;
+    }
+  
+    .menu-button {
+      display: block;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .menu-button {
+      display: none;
     }
   }
   @media screen and (max-width: 767px) {
