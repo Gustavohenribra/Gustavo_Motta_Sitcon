@@ -40,9 +40,9 @@ Para configurar este projeto em seu ambiente local, siga os passos abaixo:
 
 ## Como Usar
 
-Abra um outro terminal para iniciar o servidor do backend, dentro da pasta backend execute `npm start`.
+Abra um terminal para iniciar o servidor do backend, dentro da pasta backend execute `npm start`.
 
-Para iniciar o servidor do projeto, execute `npm start` dentro da pasta frontend. O servidor estará acessível na porta padrão `3000`.
+Para iniciar o servidor do projeto, abra um outro terminal e execute `npm start` dentro da pasta frontend. O servidor estará acessível na porta padrão `3000`.
 
 ## Estrutura do Banco de Dados
 
