@@ -32,8 +32,8 @@ Para configurar este projeto em seu ambiente local, siga os passos abaixo:
    ```
    DB_USER=seu_usuario
    DB_PASSWORD=sua_senha
-   DB_HOST=endereço_do_host
-   DB_PORT=porta_do_banco
+   DB_HOST=endereço_do_host(Testando localmente seria o "localhost")
+   DB_PORT=porta_do_banco(A porta padrao do postgresql é "5432")
    DB_NAME=nome_do_banco
    ```
 5. Inicialize o banco de dados com os scripts de migração e de seeding dentro da pasta backend:`npm run migrate` e `npm run seed`.
@@ -41,7 +41,7 @@ Para configurar este projeto em seu ambiente local, siga os passos abaixo:
 ## Como Usar
 
 Para iniciar o servidor do projeto, execute `npm start` dentro da pasta frontend. O servidor estará acessível na porta padrão `3000`.
-Para iniciar o backend, execute `npm start` dentro da pasta backend.
+Abra um outro terminal para iniciar o servidor do backend, dentro da pasta backend execute `npm start`.
 
 ## Estrutura do Banco de Dados
 
