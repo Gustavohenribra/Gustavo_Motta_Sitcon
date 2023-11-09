@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { ReactComponent as ArrowLeft } from '../images/arrow-left.svg';
 import { ReactComponent as ArrowRight } from '../images/arrow-right.svg';
-
+import { Link } from 'react-router-dom';
 
 const PatientList = () => {
   const [patients, setPatients] = useState([]);
@@ -14,7 +14,7 @@ const PatientList = () => {
     const loadAllPatients = async () => {
       try {
         const response = await axios.get('http://localhost:3001/api/pacientes/todos');
-        setAllPatients(response.data); // Armazenando todos os pacientes
+        setAllPatients(response.data);
       } catch (error) {
         console.error('Erro ao buscar todos os pacientes:', error);
       }
@@ -35,12 +35,10 @@ const PatientList = () => {
 
   const [searchTerm, setSearchTerm] = useState('');
 
-  // Função para atualizar a pesquisa e o filtro
   const updateSearch = (event) => {
     setSearchTerm(event.target.value.toLowerCase());
   };
   
-  // Filtre os pacientes para que a busca seja correspondida desde o início do nome
   const filteredPatients = searchTerm
   ? allPatients.filter(patient =>
       patient.nome.toLowerCase().startsWith(searchTerm) || 
@@ -77,7 +75,9 @@ const PatientList = () => {
                   <td>{patient.dataNasc}</td>
                   <td>{patient.CPF}</td>
                   <td>
-                    <button className='btn-ver-mais'>Ver Mais</button>
+                  <Link to={`/solicitacao-clinica/${patient.id}`} className='btn-ver-mais'>
+                    Prosseguir
+                  </Link>
                   </td>
                 </tr>
               ))}

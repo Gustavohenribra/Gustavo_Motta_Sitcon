@@ -1,4 +1,3 @@
-// ContactInfo.js
 import React from "react";
 import envelopeImg from "../images/envelope.svg";
 import pinImg from "../images/map-pin.svg";

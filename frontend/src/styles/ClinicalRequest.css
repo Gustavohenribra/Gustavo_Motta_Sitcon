@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+.form-section {
+    width: 100%;
+    margin: 20px auto;
+    padding: 50px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: #fff;
+    font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .back-button, .save-button {
+    padding: 10px 25px;
+    font-size: 1.125rem;
+    border-radius: 10px;
+    border: 2px solid #dcdcdc; 
+    background-color: transparent; 
+    color: #585858; 
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease; 
+  }
+
+  .back-button:hover, .save-button:hover {
+    background-color: #f2f2f2;
+    color: #fff;
+  }
+
+  .save-button {
+    background-color: rgb(226, 168, 91);
+  }
+
+  .back-button:hover {
+    background-color: #9e9d99;
+  }
+  
+  .save-button:hover{
+    background-color: rgb(255, 191, 42);
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .button-save {
+    height: 50px;
+    display: flex;
+    justify-content: flex-end; 
+  }  
+  
+  .form-group input[type="text"],
+  .form-group input[type="date"],
+  .form-group input[type="time"],
+  .form-group select {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    border: none; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease-in-out; 
+  }
+
+  .form-group input[type="text"]:focus,
+  .form-group input[type="date"]:focus,
+  .form-group input[type="time"]:focus,
+  .form-group select:focus {
+    outline: none; 
+    box-shadow: 0 0 0 4px rgba(236, 193, 136, 0.25); 
+  }
+
+  .form-group textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    border: none; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease-in-out; 
+  }
+  
+  .form-group textarea:focus {
+    outline: none; 
+    box-shadow: 0 0 0 4px rgba(236, 193, 136, 0.25); 
+  }
+
+  .attention-message {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    color: rgb(255, 145, 1);
+    margin-top: 20px;
+    text-align: center; 
+    font-weight: bold; 
+    padding: 10px; 
+    background-color: #fff4ec91; 
+    border: 1px solid #ffd9ad86; 
+    border-radius: 5px; 
+  }
+  
+  .title {
+    font-size: 1.5em;
+  }
+
+  .form-section {
+    max-width: 1000px; 
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    background: #f0f0f0;
+  }
+  
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .form-group select {
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    appearance: none; 
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-position: right 15px center; 
+    background-repeat: no-repeat;
+    background-size: 12px 12px; 
+    padding-right: 30px; 
+  }
+
+  .form-group {
+    flex: 1; 
+    margin-right: 10px; 
+  }
+   
+  .form-group input {
+    box-sizing: border-box;
+  }
+
+  .form-group input[readOnly] {
+    background-color: #f2f2f2; 
+    cursor: not-allowed; 
+  }
+
+  .form-group.full-width {
+    width: 100%; 
+  }
+  
+  .form-group:last-child {
+    margin-right: 0; 
+  }
+  
+  .attention-message {
+    width: 100%;
+    text-align: left; 
+    margin-bottom: 20px; 
+  }
+  
+  .flex-container-horizontal {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center; 
+  }

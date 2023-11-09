@@ -83,7 +83,7 @@
 html {
   height: 100%;
   position: relative;
-  min-height: 115vh; /* Altura da tela */
+  min-height: 115vh; 
   padding-bottom: 50px;
 }
 body {
@@ -631,6 +631,23 @@ textarea.w-select {
 }
 .w-hidden-main {
   display: none !important;
+}
+
+@media (max-width: 991px) {
+  .navbar .w-nav-menu.w--nav-menu-open {
+    padding-top: 10px;
+    display: block !important;
+    background-color: #323232;
+    box-shadow: none;
+    border-left: 0;
+  }
+  .nav-menu {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
 }
 @media screen and (max-width: 991px) {
   .w-container {
@@ -2449,7 +2466,7 @@ p {
 }
 
 .div-block-4 {
-  width: 95%;
+  width: 85%;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   flex-direction: row;
@@ -2646,7 +2663,7 @@ p {
   }
 
   .div-block-3 {
-    width: 35%;
+    width: 25%;
   }
 
   .heading-3 {
@@ -2937,7 +2954,7 @@ td {
 
 .tabela-pacientes th,
 .tabela-pacientes td {
-  padding: 13px 25px;
+  padding: 18px 25px;
 }
 
 .tabela-pacientes thead {
@@ -2986,8 +3003,15 @@ td {
   font-size: 24px;
 }
 
+.btn-ver-mais:link,
+.btn-ver-mais:visited,
+.btn-ver-mais:hover,
+.btn-ver-mais:active {
+  text-decoration: none;
+}
+
 .btn-ver-mais {
-  background-color: #c0955c; /* Uma cor azul agradável */
+  background-color: #c0955c; 
   color: white;
   padding: 8px 20px;
   border: none;
@@ -2999,7 +3023,7 @@ td {
 }
 
 .btn-ver-mais:hover {
-  background-color: #ab5939; /* Um azul um pouco mais escuro para o efeito hover */
+  background-color: #ab5939; 
 }
 
 .pagination-controls {
@@ -3009,19 +3033,19 @@ td {
 }
 
 .pagination-btn, .page-number {
-  border: 1px solid #ddd; /* Ajuste a cor da borda conforme necessário */
-  border-radius: 5px; /* Cantos arredondados */
+  border: 1px solid #ddd; 
+  border-radius: 5px; 
   padding: 5px 10px;
   margin: 0 5px;
-  background-color: #f8f9fa; /* Ajuste a cor de fundo conforme necessário */
+  background-color: #f8f9fa; 
   cursor: pointer;
-  transition: background-color 0.3s; /* Efeito suave na transição de cor */
-  height: 35px; /* ou qualquer tamanho que você prefira */
+  transition: background-color 0.3s; 
+  height: 35px; 
   width: 45px;
 }
 
 .pagination-btn:hover, .page-number:hover {
-  background-color: #e2e6ea; /* Cor de fundo ao passar o mouse */
+  background-color: #e2e6ea; 
 }
 
 .page-number.active {
@@ -3056,22 +3080,56 @@ td {
 }
 
 .search-input {
-  width: 40%; /* Adjust the width as necessary */
+  width: 40%; 
   padding: 10px 20px;
-  font-size: 16px; /* Adjust font size as needed */
-  border-radius: 25px; /* Rounded borders */
-  border: 1px solid #ccc; /* Light gray border */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  transition: all 0.3s ease; /* Smooth transition for interactions */
+  font-size: 16px; 
+  border-radius: 25px; 
+  border: 1px solid #ccc; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: all 0.3s ease; 
 }
 
 .search-input:focus {
   outline: none;
-  border-color: #c0955c; /* Highlighted border color when focused */
-  box-shadow: 0px 0px 8px rgba(255, 173, 50, 0.699); /* More prominent shadow when focused */
+  border-color: #c0955c; 
+  box-shadow: 0px 0px 8px rgba(255, 173, 50, 0.699); 
 }
 
-/* Placeholder styles */
+
 .search-input::placeholder {
-  color: #999; /* Placeholder text color */
+  color: #999; 
+}
+
+@media (max-width: 768px) {
+  .search-input {
+    width: 60%;
+    padding: 8px 15px;
+  }
+
+  .tabela-pacientes {
+    font-size: 16px;
+  }
+
+  .tabela-pacientes th,
+  .tabela-pacientes td {
+    padding: 10px;
+  }
+
+  .btn-ver-mais {
+    padding: 6px 15px;
+  }
+
+  .pagination-controls {
+    flex-wrap: wrap;
+  }
+
+  .pagination-btn, .page-number {
+    padding: 3px 7px;
+    margin: 2px;
+    width: auto;
+  }
+
+  .cabecalho-tabela {
+    font-size: 17px;
+  }
 }
